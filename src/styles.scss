@@ -1,1 +1,282 @@
 /* You can add global styles to this file, and also import other style files */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto; // para centrar
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 70px;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item+.menu__item {
+    padding-left: 10px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    padding: 43px 20px;
+    transition: all .3s;
+}
+
+.menu__link:hover {
+    // Hover - Al navegar sobre el elemento
+    background-color: #131313;
+    color: #FFFFFF;
+}
+
+// slick dots
+.slick-dots {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.slick-dots button {
+    font-size: 0;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    width: 2px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.slick-dots li+li {
+    padding-top: 10px;
+}
+
+.slick-active button {
+    background-color: #FF4040;
+}
+
+.slick-dots button:hover {
+    background-color: #FF4040;
+}
+
+// 2 slider----------------------
+.slider {
+    margin-bottom: 50px;
+}
+
+.bike-slider_2 {
+    padding-left: 50px;
+}
+
+.slider__items .slick-dots {
+    top: 0;
+    left: 0;
+}
+
+.slider__items .slick-dots button {
+    width: 3px;
+    height: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+// .slick-dots .slick-dots {
+//     position: absolute;
+//     top: 50px;
+//     left: 0;
+// }
+// ---FOOTER----
+.footer {
+    background-color: #131313;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__social-link+.footer__social-link {
+    margin-left: 26px;
+}
+
+.footer__contacts {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.footer__contacts-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-link+.footer__contacts-link {
+    margin-top: 10px;
+}
+
+.footer__contacts-img {
+    margin-right: 10px;
+}

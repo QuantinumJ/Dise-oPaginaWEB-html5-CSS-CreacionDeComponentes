@@ -1,0 +1,36 @@
+.info {
+    margin-bottom: 150px;
+}
+
+.info__inner {
+    display: flex;
+}
+
+.info__img {
+    margin-right: 60px;
+    flex-basis: 570px;
+    object-fit: cover;
+}
+
+.info__list {
+    flex-basis: 490px;
+}
+
+.info__item+.info__item {
+    padding-top: 50px;
+}
+
+.info__item-title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.infi__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    max-width: 450px;
+}
